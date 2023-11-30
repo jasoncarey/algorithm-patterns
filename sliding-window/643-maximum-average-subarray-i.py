@@ -2,7 +2,10 @@
 # https://leetcode.com/problems/maximum-average-subarray-i/description/
 
 class Solution:
-    def findMaxAverage(self, nums: List[int], k: int) -> float:
+    def find_max_average(self, nums: List[int], k: int) -> float:
+
+        # Contiguous subarray -> Intuition: sliding window
+        # Length = k -> Intuition: fixed sliding window
 
         if len(nums) < k: return
         max_sum, window_sum = nums[0], nums[0]
