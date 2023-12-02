@@ -17,12 +17,10 @@ class Solution:
         freq[s[start]] = 1
 
         for end in range(1, len(s)):
-            c = s[end]
-            freq[c] = freq.get(c, 0) + 1
-            max_char = max(max_char, freq[c])
+            freq[s[end]] = freq.get(s[end], 0) + 1
+            max_char = max(max_char, freq[s[end]])
             if end - start + 1 > max_char + k:
                 freq[s[start]] = freq[s[start]] - 1
-                max_char = max(max_char, freq[s[start]])
                 start += 1  
 
         if len(s) < max_char + k: return len(s) 
