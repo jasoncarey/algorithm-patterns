@@ -1,15 +1,17 @@
 # 206. Reverse Linked List
 # https://leetcode.com/problems/reverse-linked-list
 
-# TC: 
-# SC: 
+# TC:
+# SC:
 
 from typing import Optional
+
 
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
+
 
 class Solution:
     # TC: O(n)
@@ -23,23 +25,23 @@ class Solution:
         # Handle the empty list or single-node list case
         if not head or not head.next:
             return head
-    
+
         new_head = self.reverse_list_recursive(head.next)
         head.next.next = head
         head.next = None
 
         return new_head
-    
+
     # TC: O(n)
     # SC: O(1)
     def reverse_list_iterative(self, head: Optional[ListNode]) -> Optional[ListNode]:
         # 3 pointers solution [prev, curr, temp] in this order
         # reverse curr (curr.next = prev)
         # move each pointer right (curr = temp so we don't go through our new reversed path)
-        
+
         if self.has_cycle(head):
             return None
-        
+
         prev, curr = None, head
 
         while curr:

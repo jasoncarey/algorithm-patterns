@@ -6,6 +6,7 @@
 
 from typing import List
 
+
 class Solution:
     def find_disappeared_numbers(self, nums: List[int]) -> List[int]:
         n = len(nums) + 1
@@ -13,11 +14,12 @@ class Solution:
 
         for num in nums:
             seen[num] = True
-        
+
         print(seen)
         disappeared_numbers = [i for i in range(1, n) if seen[i] == False]
         return disappeared_numbers
-    
+
+
 class OptimalSolution:
     # TC: O(n)
     # SC: O(1)
@@ -27,14 +29,15 @@ class OptimalSolution:
             nums[index] = -abs(nums[index])
 
         return [i + 1 for i in range(len(nums)) if nums[i] > 0]
-    
+
+
 if __name__ == "__main__":
     s = Solution()
 
-    input_1 = [4,3,2,7,8,2,3,1]
+    input_1 = [4, 3, 2, 7, 8, 2, 3, 1]
     print(s.find_disappeared_numbers(input_1))
     # Expect [5, 6]
 
-    input_2 = [1,1]
+    input_2 = [1, 1]
     print(s.find_disappeared_numbers(input_2))
     # Expect [2]

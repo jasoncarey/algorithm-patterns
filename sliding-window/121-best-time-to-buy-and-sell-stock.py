@@ -4,6 +4,7 @@
 # TC: O(n)
 # SC: O(1)
 
+
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         # Buy/sell is a subarray -> Intuition: sliding window
@@ -17,5 +18,5 @@ class Solution:
                 profit = max(profit, prices[sell] - prices[buy])
             else:
                 buy = sell
-            
+
         return profit

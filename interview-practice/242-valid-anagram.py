@@ -11,22 +11,24 @@
 
 from collections import defaultdict
 
+
 class Solution:
     def is_anagram(self, s: str, t: str) -> bool:
         if len(s) != len(t):
             return False
 
         s_map = defaultdict(int)
-        
+
         for c in s:
             s_map[c] += 1
         for c in t:
             s_map[c] -= 1
-        
+
         for count in s_map.values():
             if count != 0:
                 return False
         return True
+
 
 # Edge cases
 solution = Solution()

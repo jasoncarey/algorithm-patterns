@@ -4,6 +4,7 @@
 # TC: O(n)
 # SC: O(n)
 
+
 class Solution:
     def length_of_longest_substring(self, s: str) -> int:
         # Substring -> Sliding Window
@@ -11,7 +12,8 @@ class Solution:
         # Repeating characters -> aux. data structure required
         # No repeat allowed -> use a set()
 
-        if not s: return 0
+        if not s:
+            return 0
 
         start = 0
         longest = 1
@@ -23,7 +25,7 @@ class Solution:
                 freq.remove(s[start])
                 start += 1
                 curr -= 1
-            
+
             freq.add(s[end])
             curr += 1
             longest = max(longest, curr)
