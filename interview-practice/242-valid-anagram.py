@@ -12,7 +12,7 @@
 from collections import defaultdict
 
 class Solution:
-    def isAnagram(self, s: str, t: str) -> bool:
+    def is_anagram(self, s: str, t: str) -> bool:
         if len(s) != len(t):
             return False
 
@@ -30,7 +30,7 @@ class Solution:
 
 # Edge cases
 solution = Solution()
-print(solution.isAnagram("", ""))  # True
-print(solution.isAnagram("a", "ab"))  # False
-print(solution.isAnagram("anagram", "nagaram"))  # True
-print(solution.isAnagram("rat", "car"))  # False
+print(solution.is_anagram("", ""))  # True
+print(solution.is_anagram("a", "ab"))  # False
+print(solution.is_anagram("anagram", "nagaram"))  # True
+print(solution.is_anagram("rat", "car"))  # False
