@@ -1,6 +1,10 @@
 # 125. Valid Palindrome
 # https://leetcode.com/problems/valid-palindrome
+# Easy
 # Two Pointers
+
+# TC: O(n)
+# SC: O(1)
 
 
 def is_palindrome(s: str) -> bool:
