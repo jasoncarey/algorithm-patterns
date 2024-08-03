@@ -3,6 +3,9 @@
 # Medium
 # Two Pointers
 
+# TC: O(n^2)
+# SC: O(n)
+
 from typing import List
 
 
@@ -36,6 +39,8 @@ def three_sum(nums: List[int]) -> List[List[int]]:
 
     return results
 
+
+# --------------------------------- #
 
 print("Expected: [[-1,-1,2],[-1,0,1]]. " "Got: ", three_sum([-1, 0, 1, 2, -1, 4]))
 print("Expected: [[0,0,0]]. " "Got: ", three_sum([0, 0, 0, 0]))
