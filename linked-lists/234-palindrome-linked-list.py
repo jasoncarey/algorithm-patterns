@@ -2,7 +2,7 @@
 234. Palindrome Linked List
 https://leetcode.com/problems/palindrome-linked-list/
 
-Medium
+Medium (revised from Easy for O(1) solution)
 Linked List
 
 Algorithm:
@@ -46,9 +46,6 @@ def reverse(head: ListNode) -> ListNode:
 
     prev, curr = None, head
     while curr:
-        pnext = curr.next
-        curr.next = prev
-        prev = curr
-        curr = pnext
+        curr.next, prev, curr = prev, curr, curr.next
 
     return prev
