@@ -1,10 +1,12 @@
 """
 2. Add Two Numbers
 https://leetcode.com/problems/add-two-numbers
+
 Medium
 Linked List
 
-Example: [2,4,3], [5,6,4] -> [7,0,8]
+TC: O(n)
+SC: O(n)
 """
 
 
