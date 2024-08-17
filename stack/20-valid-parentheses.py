@@ -3,6 +3,9 @@
 https://leetcode.com/problems/valid-parentheses
 
 Easy
+
+TC: O(n)
+SC: O(n)
 """
 
 
