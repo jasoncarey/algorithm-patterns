@@ -3,6 +3,8 @@
 https://leetcode.com/problems/car-fleet
 
 Medium
+
+Monotonically increasing stack
 """
 
 from typing import List
