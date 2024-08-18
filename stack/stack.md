@@ -6,6 +6,8 @@
 ## Monotonic Stack
 - maintains elements in increasing or decreasing order
 - useful for problems requiring us to find the `next smaller` or `next larget` element
+- increasing: pop until top of stack < new element
+- decreasing: pop until top of stack > new element
 
 ```python
 # Monotonically increasing stack
