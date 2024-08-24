@@ -3,6 +3,9 @@
 https://leetcode.com/problems/evaluate-reverse-polish-notation/description/
 
 Medium
+
+TC: O(n)
+SC: O(n)
 """
 
 

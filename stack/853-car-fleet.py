@@ -5,6 +5,9 @@ https://leetcode.com/problems/car-fleet
 Medium
 
 Monotonically increasing stack
+
+TC: O(nlog(n))
+SC: O(n)
 """
 
 from typing import List
