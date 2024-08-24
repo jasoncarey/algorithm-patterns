@@ -3,6 +3,9 @@
 https://leetcode.com/problems/search-in-rotated-sorted-array/
 
 Medium
+
+TC: O(log(n))
+SC: O(1)
 """
 
 
