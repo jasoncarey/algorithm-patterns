@@ -1,14 +1,16 @@
-# Trees
+"""
+102. Binary Tree Level Order Traversel
+https://leetcode.com/problems/binary-tree-level-order-traversal/
 
-- DFS: stack or recursive (stack)
-- BFS: queue
+Medium
 
-- Diameter = max_height(left) + max_height(right)
+TC: O(n)
+SC: O(w) ~> O(n/2) -> O(n)
+"""
 
 
-```python
-# General BFS
-def bfs(root):
+def level_order(root):
+    # BFS
     if not root:
         return []
 
@@ -21,17 +23,13 @@ def bfs(root):
 
         for i in range(level_size):
             node = q.popleft()
-
-            # process current node based on specific problem
-            level.append(node.val) 
+            level.append(node.val)
 
             if node.left:
                 q.append(node.left)
             if node.right:
                 q.append(node.right)
 
-        # perform level operations here
         result.append(level)
 
     return result
-```
