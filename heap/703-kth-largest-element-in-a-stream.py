@@ -4,9 +4,12 @@ https://leetcode.com/problems/kth-largest-element-in-a-stream/
 
 Easy
 
-TC: O(nlog(k)), O(log(k))
+TC: O(n*log(k)), O(log(k))
 SC: O(k)
 """
+
+import heapq
+from typing import List
 
 
 class KthLargest:
