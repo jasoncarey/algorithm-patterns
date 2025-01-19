@@ -5,7 +5,7 @@ https://leetcode.com/problems/subsets/description/
 Medium
 
 TC: O(n * 2^n)
-SC: O(n * 2^n)
+SC: O(n)
 """
 
 
