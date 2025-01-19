@@ -4,8 +4,6 @@ https://leetcode.com/problems/design-twitter/description/
 
 Medium
 
-Intuition:
-
 TC: 
 SC: 
 """
