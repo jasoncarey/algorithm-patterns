@@ -32,3 +32,15 @@ def solution:
   backtrack([], initial_options)
   return result
 ```
+
+```python
+# Make a list of lists unqiue
+seen = set()
+unique_result = []
+for combination in result:
+    combination.sort()
+    t = tuple(combination)
+    if t not in seen:
+        unique_result.append(combination)
+        seen.add(t)
+```
