@@ -20,7 +20,7 @@ def solution:
   result = []
   def backtrack(path, options):
     if is_solution(path):
-      result.append(path[:])
+      result.append(path[:])  # shallow copy
       return
     
     for i in range(len(options)):
