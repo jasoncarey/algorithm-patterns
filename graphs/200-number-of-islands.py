@@ -16,7 +16,7 @@ def num_islands(grid):
     islands = 0
 
     def dfs(r, c):
-        if r < 0 or c < 0 or r >= ROWS or c >= ocls or grid[r][c] == "0":
+        if r < 0 or c < 0 or r >= ROWS or c >= COLS or grid[r][c] == "0":
             return
 
         grid[r][c] = "0"
