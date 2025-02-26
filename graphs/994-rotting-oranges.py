@@ -4,8 +4,8 @@ https://leetcode.com/problems/rotting-oranges
 
 Medium
 
-TC: 
-SC: 
+TC: O(n)
+SC: O(n) 
 """
 
 from collections import deque
